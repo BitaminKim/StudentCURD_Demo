@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>Servlet_Dynamic_Demo</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-  <servlet>
-  	<servlet-name>Hello Servlet Demo</servlet-name>
-  </servlet>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Servlet_Dynamic_Demo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>InsertUser</servlet-name>
+		<servlet-class>com.bitam.controller.InsertUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertUser</servlet-name>
+		<url-pattern>/InsertUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteUserById</servlet-name>
+		<servlet-class>com.bitam.controller.DeleteUserById</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserById</servlet-name>
+		<url-pattern>/DeleteUserByIdServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>com.bitam.controller.UpdateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/UpdateUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SelectUserCount</servlet-name>
+		<servlet-class>com.bitam.controller.SelectUserCount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectUserCount</servlet-name>
+		<url-pattern>/SelectUserCountServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SelectUserById</servlet-name>
+		<servlet-class>com.bitam.controller.SelectUserById</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectUserById</servlet-name>
+		<url-pattern>/SelectUserByIdServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SelectUserAll</servlet-name>
+		<servlet-class>com.bitam.controller.SelectUserAll</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectUserAll</servlet-name>
+		<url-pattern>/SelectUserAllServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

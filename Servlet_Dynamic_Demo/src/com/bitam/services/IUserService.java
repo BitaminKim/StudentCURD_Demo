@@ -10,7 +10,7 @@ public interface IUserService {
 
 	int deleteUserById(int id);
 
-	int updateUserById(int id, User user);
+	int updateUser(User user);
 
 	int selectUserCount();
 

@@ -25,6 +25,7 @@ public class UpdateUser extends HttpServlet{
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
 		IUserService iUserService = new UserService();
+		user.setId(Integer.valueOf(req.getParameter("Id")).intValue());
 		user.setUsername(req.getParameter("Username"));
 		user.setPassword(req.getParameter("Password"));
 		user.setAge(Integer.valueOf(req.getParameter("Age")).intValue());
@@ -38,7 +39,7 @@ public class UpdateUser extends HttpServlet{
 		sb.append("<body>"+ln);
 		//sb.append("<tr><td>id</td><td>username</td><td>password</td><td>age</td><td>sex</td></tr>"+ln);
 		//String formatstr = "<tr><td>%d</td><td>%s</td><td>%s</td><td>%d</td><td>%s</td></tr>"+ln;		
-		sb.append("<h1>更新了"+iUserService.updateUserById(Integer.valueOf(req.getParameter("Id")).intValue(), user)+"条记录</1>"+ln);
+		sb.append("<h1>更新了"+iUserService.updateUser(user)+"条记录</1>"+ln);
 		sb.append("</body>"+ln);
 		sb.append("</html>");
 		resp.getWriter().println(sb);

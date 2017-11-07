@@ -98,7 +98,7 @@ public class UserDao implements IUserDao {
 	}
 
 	@Override
-	public int updateUserById(int id, User user) {
+	public int updateUserById(User user) {
 		// TODO Auto-generated method stub
 		DBUtil db = new DBUtil();
 		Connection con = null;
@@ -114,7 +114,7 @@ public class UserDao implements IUserDao {
 			preparedStatement.setString(2, user.getPassword());
 			preparedStatement.setInt(3, user.getAge());
 			preparedStatement.setString(4, user.getSex());
-			preparedStatement.setInt(5, id);
+			preparedStatement.setInt(5, user.getId());
 			Count = preparedStatement.executeUpdate();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

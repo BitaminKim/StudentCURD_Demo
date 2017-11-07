@@ -26,8 +26,8 @@ public class UserService implements IUserService {
 	}
 
 	@Override
-	public int updateUserById(int id, User user) {
-		return iUserDao.updateUserById(id, user);
+	public int updateUser(User user) {
+		return iUserDao.updateUserById(user);
 	}
 
 	@Override

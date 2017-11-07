@@ -10,7 +10,7 @@ public interface IUserDao {
 
 	int deleteUserById(int id);
 
-	int updateUserById(int id, User user);
+	int updateUserById(User user);
 
 	int selectUserCount();
 

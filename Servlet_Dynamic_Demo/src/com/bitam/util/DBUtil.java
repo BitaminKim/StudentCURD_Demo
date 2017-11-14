@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class DBUtil {
 
 	private final static String CLASS_DRIVER = "com.mysql.jdbc.Driver";
-	private final static String URL = "jdbc:mysql://192.168.123.64/test?characterEncoding=utr-8";
-	private final static String USERNAME = "bitaminkim";
-	private final static String PASSWORD = "kim940907";
+	private final static String URL = "jdbc:mysql://yourhost:3306/test?characterEncoding=utr-8";
+	private final static String USERNAME = "yourusername";
+	private final static String PASSWORD = "yourpassword";
 	
 	public DBUtil() {
 		try {

@@ -31,9 +31,6 @@ function check(){
     
     saveform.submit();
 }
-window.onload=function(){
-	    
-} 
 </script>
 </head>
 <body>

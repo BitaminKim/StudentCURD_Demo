@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Servlet_Dynamic_Demo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>SaveStudent</servlet-name>
+		<servlet-class>com.bitam.controller.SaveStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveStudent</servlet-name>
+		<url-pattern>/SaveStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteStudent</servlet-name>
+		<servlet-class>com.bitam.controller.DeleteStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteStudent</servlet-name>
+		<url-pattern>/DeleteStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateStudent</servlet-name>
+		<servlet-class>com.bitam.controller.UpdateStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStudent</servlet-name>
+		<url-pattern>/UpdateStudent</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateForward</servlet-name>
+		<servlet-class>com.bitam.controller.UpdateForward</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateForward</servlet-name>
+		<url-pattern>/UpdateForward</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SelectStudent</servlet-name>
+		<servlet-class>com.bitam.controller.SelectStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectStudent</servlet-name>
+		<url-pattern>/SelectStudent</url-pattern>
+	</servlet-mapping>
+
+</web-app>
